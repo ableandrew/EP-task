@@ -1,0 +1,21 @@
+nav {
+  margin-bottom: 30px;
+
+  #topMenu {
+    height: 80px;
+  }
+
+  li {
+    display: inline-block;
+    padding-right: 25px;
+    padding-top: 20px;
+  }
+
+  .listMenu a {
+    text-decoration: none;
+    color: $menuColor;
+    border-bottom: 1px dashed $menuColor;
+    font-size: 18px;
+  }
+}
+

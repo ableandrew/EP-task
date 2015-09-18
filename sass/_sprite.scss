@@ -1,0 +1,28 @@
+
+@mixin sprite($marginTop, $marginRight, $width, $height, $background){
+  margin-top: $marginTop;
+  margin-right: $marginRight;
+  width: $width;
+  height: $height;
+  background: $background;
+  float:left;
+}
+
+.spriteCanceledOrder { @include sprite(3px, 10px, 12px, 12px, url("../images/sprite.png") no-repeat -44px -1px)}
+
+.spriteOnDelivery{ @include sprite(3px, 5px, 20px, 16px,url("../images/sprite.png") no-repeat -2px -14px )}
+
+.spriteDelivered{ @include sprite(2px, 10px, 12px, 12px, url("../images/sprite.png") no-repeat -29px -16px )}
+
+.spriteDownArrow{ @include sprite(3px, 8px, 17px, 16px, url("../images/sprite.png") no-repeat -27px 0)}
+
+.spriteOpenOrder{ @include sprite(-2px, 120px, 15px, 15px,url("../images/sprite.png") no-repeat )}
+
+
+.spriteBook{
+  position:absolute;
+  width: 20px;
+  height: 17px;
+  background: url("../images/sprite.png") no-repeat -60px -5px;
+  float:left;
+}

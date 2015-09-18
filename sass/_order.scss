@@ -1,0 +1,90 @@
+#order {
+
+  .tableTR {
+    height: 50px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .tableTD {
+    display: inline-block;
+    width: 280px;
+    padding-top: 12px;
+    float: left;
+  }
+
+  .information {
+    padding: 25px 0;
+  }
+
+  div > .customerInformation {
+    display: inline-block;
+    color: grey;
+    float: left;
+    width: 280px;
+  }
+
+  .done {
+    background: rgb(230, 255, 255);
+  }
+
+  .ordersTitle {
+    border-bottom: 1px dashed #000080;
+  }
+
+  .ordersList {
+    display: inline-block;
+  }
+
+  div .ordersList:first-child {
+    width: 40%;
+  }
+  div .ordersList:nth-child(2) {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    vertical-align: top;
+  }
+  div .ordersList:nth-child(3) {
+    display: inline-block;
+    width: 18%;
+    text-align: right;
+    vertical-align: top;
+  }
+
+  .delivered {
+    color: green;
+  }
+  .cancel {
+    color: red;
+  }
+  .price {
+    color: rgb(255, 59, 0);
+  }
+  .discount {
+    color: lightgrey;
+    text-decoration: line-through;
+  }
+  .order {
+    height: 100px;
+    padding-top: 10px;
+  }
+  .delivery {
+    text-align: right;
+    border-bottom: 1px dashed #000080;
+    border-top: 1px dashed #000080;
+    height: 40px;
+    vertical-align: middle;
+    padding-top: 20px
+  }
+  .sum {
+    margin-top: 40px;
+  }
+  .bonus {
+    display: inline-block;
+    background: rgb(240, 250, 247);
+    padding: 5px;
+    width: 210px;
+    text-align: center;
+  }
+}

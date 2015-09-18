@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Task</title>
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="css/production.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='lib/vendor/bootstrap/dist/css/bootstrap.min.css' type='text/css' media='all'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script data-main="js/main" src="lib/vendor/requirejs/require.js"></script>
+</head>
+<body>
+
+
+    <div id="wrapper">
+
+        <nav id="topMenu">
+            <ul class="listMenu">
+                <li id="all">
+                    <a class="topMenuA" href="#" style="border-bottom: 0; color:black">Все заказы</a>
+                </li>
+                <li id="greyStatus">
+                    <a class="topMenuA" href="#">Текущие</a>
+                </li>
+                <li id="greenStatus">
+                    <a class="topMenuA" href="#">Завершенные</a>
+                </li>
+                <li id="redStatus">
+                    <a class="topMenuA" href="#">Отмененные</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div id="order">
+
+            <div class="tableTR">
+                <div class="tableTD">
+                   <b>Дата заказа</b>
+                   <div class="spriteDownArrow"></div> 
+                </div>
+                <div class="tableTD">
+                    <b>№ заказа</b>
+                </div>
+                <div class="tableTD">
+                    <b>Текущий статус</b>
+                </div><br>
+            </div>
+
+
+            <ul id="akkordeon">
+         
+                <li status="red" number="1">
+                    <div class="tableTR done">
+                        <div class="tableTD">9 июля 2012</div>
+                        <div class="tableTD">№0570</div>
+                        <div class="tableTD cancel"> 
+                            <div class="spriteCanceledOrder"></div>
+                            <span>Отменен</span>
+                        </div><br>
+                        <div class="spriteOpenOrder"></div>
+                    </div>
+                </li>
+                <div id="1" style="display:none">
+                    <span class="cancel">Данный заказ был удален</span>
+                </div>
+
+
+                <li status="grey" number="2" >
+                    <div class="tableTR">
+                        <div class="tableTD">3 июля 2012</div>
+                        <div class="tableTD">№ МЕ0017681</div>
+                        <div class="tableTD">
+                            <div class="spriteOnDelivery"></div>
+                            <span>Отправлен курьерской службой</span>
+                        </div><br>
+                        <div class="spriteOpenOrder"></div>
+                    </div>
+                </li>
+
+                <div id="2" style="display:none">
+                    <div class="information">
+                        <div class="customerInformation">Имя получателя:</div> 
+                        <div>г. Киев, ул. Саксаганского, 65, кв. 11</div>
+                        <div class="customerInformation">Электронная почта:</div> 
+                        <div>+38 050 123-45-56</div>
+                        <div class="customerInformation">Доставка:</div> 
+                        <div>Курьером лично в руки. Адрес: г. Киев, ул. Саксаганского, 65, кв. 11</div>
+                        <div class="customerInformation">Оплата:</div> 
+                        <div>Наличными при получении</div>
+                    </div>
+
+                    <div class="ordersTitle">
+                        <div class="ordersList">
+                            <b>Товары в заказе</b>
+                        </div>
+                        <div class="ordersList">
+                            <b>Количество</b>
+                        </div>
+                        <div class="ordersList">
+                            <b>Цена</b>
+                        </div>
+                    </div>
+
+
+                    <div class="order">
+                        <div class="ordersList">
+                            <img style="float:left" src="images/book1.jpg">
+                            <div class="spriteBook"></div>
+                            <a href="#">Девушка с татуировкой дракона</a>
+                            <span>Стиг Ларсон</span>
+                            <b class="price">138грн.</b>
+                        </div>
+
+                        <div class="ordersList">
+                            <b>1</b>
+                        </div>
+                        <div class="ordersList">
+                           <b class="price">138грн.</b>
+                        </div>
+                    </div>
+
+
+                    <div class="order">
+                        <div class="ordersList">
+                            <img style="float:left" src="images/book2.jpg">
+                            <div class="spriteBook"></div>
+                            <a href="#">Девушка, которая взрывала воздушные шары </a>
+                            <span>Стиг Ларсон</span><br>
+                            <b class="price discount">170грн.</b><br>
+                            <b class="price">138грн.</b>
+                        </div>
+                        <div class="ordersList">
+                            <b>1</b>
+                        </div>
+                        <div class="ordersList">
+                            <b class="price">138грн.</b>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div class="delivery">
+                            <span>Доставка: <b class="price">20грн.</b></span>
+                        </div>
+                    </div>
+
+                    <div class="sum">
+                        <div style="float:left;">
+                            <span class="bonus"><b>+38 бонусов</b> за этот заказ</span>
+                        </div>
+                    </div>
+                    <div style="text-align:right; padding-bottom:40px;">
+                        <span>Сумма заказа: <b class="price">296грн.</b></span>
+                    </div>
+                </div>
+
+
+                <li status="green" number="3">
+             
+                    <div class="tableTR done">
+                        <div class="tableTD">17 мая 2012</div>
+                        <div class="tableTD">№0570</div>
+                        <div class="tableTD delivered">
+                            <div class="spriteDelivered"></div>
+                            <span>Доставлен</span>
+                        </div><br>
+                        <div class="spriteOpenOrder"></div>
+                    </div> 
+                </li>
+
+                <div id="3" style="display:none">
+                    <span class="delivered">Данный заказ был успешно доставлен!</span>
+                </div>
+         
+                <li status="green" number="4">
+                    <div class="tableTR done">
+                        <div class="tableTD">29 февраля 2012</div>
+                        <div class="tableTD">№ МЕ0017681</div>
+                        <div class="tableTD delivered">
+                            <div class="spriteDelivered"></div>
+                            <span>Доставлен</span>
+                        </div><br>
+                        <div class="spriteOpenOrder"></div>
+                    </div> 
+                </li>  
+
+                <div id="4" style="display:none">
+                    <span class="delivered">Данный заказ был успешно доставлен!</span>
+                </div>
+            </ul>
+    </div> 
+
+</div>
+
+</body>
+</html>
