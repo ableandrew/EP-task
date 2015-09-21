@@ -10,7 +10,7 @@ requirejs.config({
 });
 
 require(
-    ['script', 'jquery'],
+    ['script.min', 'jquery'],
     function( ParentClass, $ ){
 
         var obj = new ParentClass;
